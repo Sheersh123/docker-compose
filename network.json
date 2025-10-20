@@ -1,0 +1,46 @@
+[
+    {
+        "Name": "bridge",
+        "Id": "d8c23c0d06776ddfe8b60b164616079d33e26d3f1d68fe01939c2ce41d08eb01",
+        "Created": "2025-10-20T14:18:17.6733668Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "61d3e537cd11b4764148ef9d0e92a025523f0ca72552f5dcde60b8f7943e44ad": {
+                "Name": "goofy_tharp",
+                "EndpointID": "1fb677da78b405f8ecf4bc450405996e6e7c4d814e2189f05a3532553d7cc361",
+                "MacAddress": "66:6f:c5:99:5b:48",
+                "IPv4Address": "172.17.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {
+            "com.docker.network.bridge.default_bridge": "true",
+            "com.docker.network.bridge.enable_icc": "true",
+            "com.docker.network.bridge.enable_ip_masquerade": "true",
+            "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+            "com.docker.network.bridge.name": "docker0",
+            "com.docker.network.driver.mtu": "1500"
+        },
+        "Labels": {}
+    }
+]
