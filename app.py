@@ -9,3 +9,8 @@ def home():
 @app.route("/ping")
 def ping():
     return {"pong": True}
+
+@app.route("/hello")
+def ping2():
+    return {"msg": "hello-there"}
+
