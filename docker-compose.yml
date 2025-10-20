@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  flask:
+    build: .
+    container_name : flask-app
+    expose:
+     -  "5000"
+
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx-proxy
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginxconf:ro
+    depends_on:
+      - flask
+  
+
+
+
+
+
